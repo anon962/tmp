@@ -33,7 +33,7 @@ def main():
         lines.append(after_parse)
 
     # Extract equip key
-    soup = bs4.BeautifulSoup(HTML_FILE.read_text(), "lxml")
+    soup = bs4.BeautifulSoup(HTML_FILE.read_text())
     assign_equip_keys(lines, soup)
 
     # Check that level, holder, etc is correct
